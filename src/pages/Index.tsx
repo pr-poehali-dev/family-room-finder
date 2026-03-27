@@ -242,7 +242,7 @@ export default function Index() {
                 <div className="glass rounded-2xl px-5 py-4">
                   <div className="flex items-center justify-between">
                     <div>
-                      <div className="font-cormorant text-xl font-semibold text-hotel-dark">Single</div>
+                      <div className="font-cormorant text-xl font-semibold text-hotel-dark">Studio</div>
                       <div className="text-sm text-muted-foreground">2 гостя · 52 м²</div>
                     </div>
                     <div className="text-right">
