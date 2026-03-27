@@ -242,11 +242,11 @@ export default function Index() {
                 <div className="glass rounded-2xl px-5 py-4">
                   <div className="flex items-center justify-between">
                     <div>
-                      <div className="font-cormorant text-xl font-semibold text-hotel-dark">Семейный люкс</div>
-                      <div className="text-sm text-muted-foreground">4 гостя · 52 м²</div>
+                      <div className="font-cormorant text-xl font-semibold text-hotel-dark">Single</div>
+                      <div className="text-sm text-muted-foreground">2 гостя · 52 м²</div>
                     </div>
                     <div className="text-right">
-                      <div className="font-bold text-hotel-orange text-xl">8 900 ₽</div>
+                      <div className="font-bold text-hotel-orange text-xl">6 000 ₽</div>
                       <div className="text-xs text-muted-foreground">за ночь</div>
                     </div>
                   </div>
