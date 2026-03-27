@@ -12,7 +12,7 @@ const ROOMS = [
     size: 52,
     guests: 4,
     tags: ["family", "crib", "play"],
-    image: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/files/684207cb-8245-400a-b9da-bd4784c38a03.jpg",
+    image: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/bucket/8f495990-0047-449e-9832-96f93c5a0bc1.png",
     badge: "Хит",
     badgeColor: "bg-hotel-orange",
   },
@@ -24,7 +24,7 @@ const ROOMS = [
     size: 28,
     guests: 3,
     tags: ["family", "crib"],
-    image: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/files/125d7735-606c-4b08-9d27-d9734683da12.jpg",
+    image: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/bucket/c74abe17-b1e8-49ac-98e9-a3fa3a22bb0d.png",
     badge: "Популярный",
     badgeColor: "bg-hotel-green",
   },
@@ -36,17 +36,18 @@ const ROOMS = [
     size: 34,
     guests: 4,
     tags: ["family", "play"],
-    image: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/files/1fc8dbba-6f55-49af-baad-7dbdca1a0b08.jpg",
+    image: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/bucket/7ad46086-027b-4b39-94f1-a61336ec7962.png",
     badge: "Новинка",
     badgeColor: "bg-hotel-yellow text-hotel-dark",
   },
 ];
 
 const GALLERY = [
-  { id: 1, src: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/files/684207cb-8245-400a-b9da-bd4784c38a03.jpg", label: "Семейный люкс" },
-  { id: 2, src: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/files/1fc8dbba-6f55-49af-baad-7dbdca1a0b08.jpg", label: "Детская игровая" },
-  { id: 3, src: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/files/125d7735-606c-4b08-9d27-d9734683da12.jpg", label: "Стандарт детский" },
-  { id: 4, src: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/files/e3f941b2-4a0b-4802-8cdb-e96ecf8e2e9e.jpg", label: "Фасад отеля" },
+  { id: 1, src: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/bucket/8f495990-0047-449e-9832-96f93c5a0bc1.png", label: "Семейный люкс" },
+  { id: 2, src: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/bucket/c74abe17-b1e8-49ac-98e9-a3fa3a22bb0d.png", label: "Стандарт детский" },
+  { id: 3, src: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/bucket/7ad46086-027b-4b39-94f1-a61336ec7962.png", label: "Номер с гостиной" },
+  { id: 4, src: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/bucket/b024e102-0421-46f3-ab06-340eca743bda.png", label: "Люкс с балконом" },
+  { id: 5, src: "https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/bucket/167e5338-2cb2-4e47-8108-92fbddcb9e12.png", label: "Эко-номер" },
 ];
 
 const SERVICES = [
@@ -232,7 +233,7 @@ export default function Index() {
           <div className="hidden lg:block relative animate-fade-in-up delay-300">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/files/684207cb-8245-400a-b9da-bd4784c38a03.jpg"
+                src="https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/bucket/167e5338-2cb2-4e47-8108-92fbddcb9e12.png"
                 alt="Семейный номер"
                 className="w-full h-[500px] object-cover"
               />
@@ -527,13 +528,13 @@ export default function Index() {
           {GALLERY.map((item, i) => (
             <div
               key={item.id}
-              className={`relative group cursor-pointer rounded-2xl overflow-hidden shadow-md hover-lift ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
+              className={`relative group cursor-pointer rounded-2xl overflow-hidden shadow-md hover-lift ${i === 0 ? "md:col-span-2 md:row-span-2" : i === 4 ? "col-span-2 md:col-span-2" : ""}`}
               onClick={() => setGalleryOpen(i)}
             >
               <img
                 src={item.src}
                 alt={item.label}
-                className={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${i === 0 ? "h-72 md:h-full" : "h-40 md:h-44"}`}
+                className={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${i === 0 ? "h-72 md:h-full" : i === 4 ? "h-48" : "h-40 md:h-44"}`}
               />
               <div className="absolute inset-0 gradient-card opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
