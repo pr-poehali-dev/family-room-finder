@@ -13,33 +13,33 @@
     --popover: 0 0% 100%;
     --popover-foreground: 20 14% 10%;
 
-    --primary: 22 100% 52%;
+    --primary: 148 47% 33%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 100% 95%;
-    --secondary-foreground: 20 14% 10%;
+    --secondary: 140 30% 93%;
+    --secondary-foreground: 148 47% 15%;
 
-    --muted: 30 20% 96%;
-    --muted-foreground: 20 10% 50%;
+    --muted: 140 15% 94%;
+    --muted-foreground: 140 10% 45%;
 
-    --accent: 168 76% 42%;
+    --accent: 148 47% 33%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 20% 88%;
-    --input: 30 20% 88%;
-    --ring: 22 100% 52%;
+    --border: 140 20% 84%;
+    --input: 140 20% 84%;
+    --ring: 148 47% 33%;
 
     --radius: 1rem;
 
     /* custom hotel vars */
-    --hotel-orange: #ff6b1a;
-    --hotel-green: #1cb893;
-    --hotel-yellow: #ffd166;
-    --hotel-dark: #1c1208;
-    --hotel-cream: #fff8f0;
+    --hotel-orange: #2d7a4f;
+    --hotel-green: #1a5c38;
+    --hotel-yellow: #a8d5b5;
+    --hotel-dark: #0d1f14;
+    --hotel-cream: #f2f8f4;
   }
 }
 
@@ -70,29 +70,29 @@
   }
 
   .gradient-hero {
-    background: linear-gradient(135deg, #ff6b1a 0%, #ff9a56 40%, #ffd166 100%);
+    background: linear-gradient(135deg, #1a5c38 0%, #2d7a4f 50%, #3d9e68 100%);
   }
 
   .gradient-card {
     background: linear-gradient(
       180deg,
       transparent 40%,
-      rgba(28, 8, 8, 0.85) 100%
+      rgba(13, 31, 20, 0.88) 100%
     );
   }
 
   .gradient-green {
-    background: linear-gradient(135deg, #1cb893 0%, #13d2a2 100%);
+    background: linear-gradient(135deg, #2d7a4f 0%, #3d9e68 100%);
   }
 
   .glass {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(242, 248, 244, 0.88);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
 
   .glass-dark {
-    background: rgba(28, 18, 8, 0.6);
+    background: rgba(13, 31, 20, 0.65);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
   }

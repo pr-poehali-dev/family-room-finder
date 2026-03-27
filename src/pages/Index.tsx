@@ -6,9 +6,9 @@ type IconName = string;
 const ROOMS = [
   {
     id: 1,
-    name: "Семейный люкс",
+    name: "Single",
     desc: "Просторный номер на 4 персоны с двумя спальными зонами и детским уголком.",
-    price: 8900,
+    price: 6000,
     size: 52,
     guests: 4,
     tags: ["family", "crib", "play"],
@@ -18,9 +18,9 @@ const ROOMS = [
   },
   {
     id: 2,
-    name: "Стандарт «Детский»",
+    name: "Double",
     desc: "Уютный номер с детской кроваткой и безопасным интерьером для малышей.",
-    price: 5400,
+    price: 8000,
     size: 28,
     guests: 3,
     tags: ["family", "crib"],
@@ -30,9 +30,9 @@ const ROOMS = [
   },
   {
     id: 3,
-    name: "Номер «Игровой»",
+    name: "Suite",
     desc: "Номер рядом с детской игровой комнатой. Идеально для активных детей.",
-    price: 6200,
+    price: 14000,
     size: 34,
     guests: 4,
     tags: ["family", "play"],
@@ -117,7 +117,7 @@ export default function Index() {
             <div className="w-8 h-8 gradient-hero rounded-xl flex items-center justify-center shadow-md">
               <span className="text-white text-sm font-bold">С</span>
             </div>
-            <span className="font-cormorant font-semibold text-xl text-hotel-dark">СемьяОтель</span>
+            <span className="font-cormorant font-semibold text-xl text-hotel-dark">Уютный Уголок</span>
           </div>
 
           <div className="hidden md:flex items-center gap-1">
@@ -617,9 +617,9 @@ export default function Index() {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-5">
             {[
-              { icon: "MapPin", title: "Адрес", value: "г. Москва, ул. Семейная, 12", sub: "5 мин от м. Парк Победы" },
+              { icon: "MapPin", title: "Адрес", value: "г. Кемерово", sub: "Ждём вас!" },
               { icon: "Phone", title: "Телефон", value: "8 800 123-45-67", sub: "Звонок бесплатный, с 8:00 до 22:00" },
-              { icon: "Mail", title: "Email", value: "hello@semyaotel.ru", sub: "Ответим в течение 2 часов" },
+              { icon: "Mail", title: "Email", value: "hotelygolok@mail.ru", sub: "Ответим в течение 2 часов" },
               { icon: "Clock", title: "Заезд / Выезд", value: "Check-in с 14:00", sub: "Check-out до 12:00" },
             ].map(item => (
               <div key={item.title} className="flex items-start gap-4 bg-white rounded-2xl p-5 shadow-sm border border-border/50">
@@ -637,16 +637,16 @@ export default function Index() {
 
           <div className="bg-hotel-dark rounded-3xl overflow-hidden relative min-h-64">
             <img
-              src="https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/files/e3f941b2-4a0b-4802-8cdb-e96ecf8e2e9e.jpg"
-              alt="Отель"
-              className="w-full h-full object-cover opacity-60"
+              src="https://cdn.poehali.dev/projects/b43ca84d-8418-4137-874a-603e55f5fe3f/bucket/64350cfc-e820-4a3a-942a-847f6781bf7a.png"
+              alt="Отель Уютный Уголок"
+              className="w-full h-full object-cover opacity-70"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-8">
               <div className="w-14 h-14 bg-hotel-orange rounded-full flex items-center justify-center mb-4 animate-pulse-ring shadow-xl">
                 <Icon name="MapPin" size={26} />
               </div>
               <p className="font-cormorant text-2xl font-semibold mb-2">Мы на карте</p>
-              <p className="text-white/70 text-sm mb-4">г. Москва, ул. Семейная, 12</p>
+              <p className="text-white/70 text-sm mb-4">г. Кемерово</p>
               <button className="px-5 py-2.5 bg-hotel-orange text-white text-sm font-semibold rounded-xl hover:bg-orange-600 transition-colors shadow-lg">
                 Открыть в картах
               </button>
@@ -664,7 +664,7 @@ export default function Index() {
                 <span className="text-white font-bold">С</span>
               </div>
               <div>
-                <div className="font-cormorant text-xl font-semibold">СемьяОтель</div>
+                <div className="font-cormorant text-xl font-semibold">Уютный Уголок</div>
                 <div className="text-white/50 text-xs">Семейный отдых нового уровня</div>
               </div>
             </div>
@@ -699,7 +699,7 @@ export default function Index() {
           </div>
 
           <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/40 text-xs">
-            <span>© 2024 СемьяОтель. Все права защищены.</span>
+            <span>© 2026 Уютный Уголок. Все права защищены.</span>
             <span>Политика конфиденциальности · Оферта</span>
           </div>
         </div>

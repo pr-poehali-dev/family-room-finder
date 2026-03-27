@@ -57,11 +57,11 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				hotel: {
-					orange: '#FF6B1A',
-					green: '#1CB893',
-					yellow: '#FFD166',
-					dark: '#1C1208',
-					cream: '#FFF8F0',
+					orange: '#2D7A4F',
+					green: '#1A5C38',
+					yellow: '#A8D5B5',
+					dark: '#0D1F14',
+					cream: '#F2F8F4',
 				}
 			},
 			borderRadius: {
